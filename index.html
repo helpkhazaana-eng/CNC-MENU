@@ -447,6 +447,270 @@ footer small{font-family:Montserrat;font-size:8px;letter-spacing:3px}
   text-transform:uppercase;
 }
 
+
+/* =========================================================
+   MOBILE-FIRST CAFE MENU
+   ========================================================= */
+@media (max-width: 700px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  #intro {
+    min-height: 100svh;
+    padding: 18px;
+  }
+
+  #intro:before {
+    inset: 10px;
+  }
+
+  #intro .intro-inner {
+    width: 100%;
+    max-width: 430px;
+    padding: 28px 18px 24px;
+  }
+
+  #intro .watermark-logo {
+    width: 145vw;
+    height: 145vw;
+    max-width: none;
+    max-height: none;
+    opacity: .075;
+    top: 46%;
+  }
+
+  #intro .kicker {
+    font-size: 8px;
+    letter-spacing: 3.2px;
+    margin-bottom: 18px;
+  }
+
+  #intro .title {
+    font-size: clamp(49px, 15vw, 70px);
+    line-height: .9;
+    letter-spacing: 1px;
+    margin: 22px 0 8px;
+  }
+
+  #intro .subtitle {
+    font-size: 21px;
+    line-height: 1.15;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  #intro .rule {
+    width: 70px;
+    margin: 18px auto;
+  }
+
+  #intro .motto {
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    line-height: 1.8;
+  }
+
+  #intro .view {
+    width: min(300px, 90%);
+    min-height: 52px;
+    margin-top: 25px;
+    padding: 14px 22px;
+    font-size: 9px;
+    letter-spacing: 2.2px;
+  }
+
+  #intro .scroll {
+    margin-top: 24px;
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  #menu .nav {
+    height: 58px;
+    padding: 0 16px;
+  }
+
+  #menu .brand {
+    font-size: 22px;
+  }
+
+  #menu .nav small {
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+
+  #menu .menuhero {
+    min-height: 245px;
+    padding: 42px 18px;
+  }
+
+  #menu .menuhero:before {
+    inset: 12px;
+  }
+
+  #menu .menuhero .ey {
+    font-size: 7px;
+    letter-spacing: 3.5px;
+  }
+
+  #menu .menuhero h1 {
+    font-size: 52px;
+    line-height: .9;
+    margin: 12px 0 8px;
+  }
+
+  #menu .menuhero p {
+    font-size: 17px;
+    line-height: 1.25;
+    max-width: 310px;
+    margin: auto;
+  }
+
+  #menu .wrap {
+    width: 100%;
+    padding: 18px 12px 55px;
+  }
+
+  /* Compact horizontal category bar */
+  #menu .categories {
+    top: 58px;
+    width: calc(100% + 4px);
+    max-width: none;
+    margin: 0 -2px 30px;
+    padding: 7px;
+    gap: 4px;
+    justify-content: flex-start;
+    border-radius: 14px;
+    overflow-x: auto;
+    box-shadow: 0 8px 24px rgba(49,39,19,.10);
+  }
+
+  #menu .categories button {
+    min-height: 37px;
+    min-width: max-content;
+    padding: 9px 13px;
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+
+  #menu .heading {
+    margin: 30px 0 17px;
+  }
+
+  #menu .heading span {
+    font-size: 7px;
+    letter-spacing: 3px;
+  }
+
+  #menu .heading h2 {
+    font-size: 33px;
+    line-height: 1;
+    margin: 6px 0;
+  }
+
+  /* One clean card per row on phones */
+  #menu .grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  #menu .card {
+    padding: 18px 16px;
+    border-radius: 8px;
+    box-shadow: 0 7px 20px rgba(70,56,28,.055);
+  }
+
+  #menu .card:before {
+    top: 8px;
+    right: 8px;
+    width: 13px;
+    height: 13px;
+  }
+
+  #menu .card h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 7px;
+  }
+
+  #menu .item {
+    min-height: 37px;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  #menu .price {
+    font-size: 16px;
+  }
+
+  #menu .feature {
+    margin: 16px 0;
+    padding: 20px 16px;
+    border-radius: 8px;
+  }
+
+  #menu .feature h3 {
+    font-size: 28px;
+  }
+
+  #menu .extras {
+    margin-top: 20px;
+    padding: 17px 16px;
+    border-radius: 8px;
+  }
+
+  #menu .extras .heading {
+    margin-bottom: 7px;
+  }
+
+  #menu footer {
+    padding: 38px 15px;
+  }
+
+  #menu footer div {
+    font-size: 17px;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+  #intro .title {
+    font-size: 48px;
+  }
+
+  #intro .subtitle {
+    font-size: 19px;
+  }
+
+  #menu .menuhero h1 {
+    font-size: 47px;
+  }
+
+  #menu .card {
+    padding: 16px 14px;
+  }
+
+  #menu .card h3 {
+    font-size: 22px;
+  }
+
+  #menu .item {
+    font-size: 10.5px;
+  }
+}
+
+/* Prevent sticky category bar from covering the first heading */
+@media (max-width: 700px) {
+  #menu .categories + section {
+    scroll-margin-top: 80px;
+  }
+}
+
 </style>
 </head>
 <body>
